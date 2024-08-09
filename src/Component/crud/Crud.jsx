@@ -85,7 +85,8 @@ const Crud = () => {
                   Edit
                 </button>
                 <button
-                  onClick={() => handleDeleteTodo(index)}
+                  onClick={() => handleDeleteTodo(index)}  
+                  
                   
                 >
                   Delete
