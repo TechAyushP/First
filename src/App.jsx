@@ -4,7 +4,8 @@ import "./index.css"
 import "./App.css"
 import { useContext } from 'react';
 import Button from './myContext0/Button';
-import Navbar from './myContext0/Navbar';
+// import Navbar from './myContext0/Navbar';
+// import Practice from './Component/practice/Practice';
 // import ClassBasedIntro from './Component/classBasedComponent/ClassBasedIntro';
 // import FbcIntro from './Component/functionBasedComponent/FbcIntro';
 // import UseStateIntro from './Component/useStateHook/UseStateIntro';
@@ -28,44 +29,51 @@ import Navbar from './myContext0/Navbar';
 // import Crud2Intro from './crud2/Crud2Intro';
 // import Api from './crud2/ApiFetch/Api';
 // import AxiosIntro from './Component/axios_Api_fetch/AxiosIntro';
-import { countercontext } from './myContext0/Context';
+// import { countercontext } from './myContext0/Context';
+// import AppAuthentictionIntro from './Component/AppAuthentication/AppAuthentictionIntro';
+// import CustomHookFetch from './Component/customHook/CustomHookFetch';
+// import Usecallback from './Component/usecallback/Usecallback';
+import Hoc from './higherOrderComponent2/Hoc';
+import Card from './higherOrderComponent2/Card';
+import Footer from './higherOrderComponent2/Footer';
+import ReduxApp from './Component/Redux/ReduxApp';
 
 
  const App = () => {
-  let data=useContext
+  // let data=useContext
   return (
     // <div>
     //   {/* ClassBasedIntro */}
 
     //   <ClassBasedIntro   class based />
     // </div>
-    //---------------------------------------------------------
+  //  ---------------------------------------------------------
 
 
 
-    // function based 
+    //function based 
 
     // <div>
     //   <FbcIntro></FbcIntro>
     // </div>
 
-        //---------------------------------------------------------
- //<div>
+     //   ---------------------------------------------------------
+//  <div>
 //  <UseStateIntro/>
-//</div> 
+// </div> 
 
 
           
 
-          //--------------------------------------------------------- props
-          // <div>
-          //   <PropsIntro/>
-          // </div>
-          //---------------------------------------------------------Default props
- //<div>
+       //   --------------------------------------------------------- props
+//           <div>
+//             <PropsIntro/>
+//           </div>
+//           ---------------------------------------------------------Default props
+//  <div>
 
-  //<DefaultPropsIntro/>
-//</div> 
+//   <DefaultPropsIntro/>
+// </div> 
 
 //-----------------------
 //--------------------------------------------------------- Synthetic events
@@ -134,19 +142,44 @@ import { countercontext } from './myContext0/Context';
 //<div>
 //  <AxiosIntro/>
 //</div>
-<div>
-  hello ji kya 
+//<div>
+//<Usecallback></Usecallback>
   
+//</div>
+
+
+
+//<div>
+//<CustomHookFetch></CustomHookFetch>
+//</div>
+
+//  <div>
+// <Hoc/>
+// <Card/>
+// <Footer></Footer>
+// </div> 
+
+<div>
+  <ReduxApp/>
 </div>
+
+
+
+// {/* <div>
+//   <Practice></Practice>
+// </div> */}
+
 
 
 
 
   );
 
-          //---------------------------------------------------------
 
-}
+ }
 
 
 export default App;
+
+
+

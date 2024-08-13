@@ -4,8 +4,10 @@ import App from './App.jsx'
 import './index.css'
 import MyContext from './Component/myContext/MyContext';
 import MyContextEx from './Component/myContextEx2/MyContextEx.jsx';
+import AppAuthentictionIntro from './Component/AppAuthentication/AppAuthentictionIntro.jsx';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>
+
    //it is for my context hook 
 
   //  <MyContext>
@@ -20,10 +22,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
    
 
+// it is for app crud opn
 
-  <React.StrictMode>
-  <App/>
-  </React.StrictMode>
+  //<AppAuthentictionIntro>  
+     //<App/>
+   // 
+  // </AppAuthentictionIntro>
+
 
 
 

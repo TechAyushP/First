@@ -1,0 +1,81 @@
+import React, { useState } from 'react';
+
+const CrudEx2 = () => {
+    let [FormData, setFormData] = useState({ name: '',
+       email: '',
+       list: [] ,
+      id:Date.now()});
+    let { name, email, list ,id} = FormData;
+
+    let handlesubmit = (e) => {
+        e.preventDefault();
+        
+        // Validation: check if name or email is empty
+        if (!name || !email) {
+            alert('Please fill the form');
+            return;
+        }
+
+        let obj = {
+            name: name,
+            email: email,
+            id:id
+        };
+        setFormData({ name: '', email: '', id:Date.now() ,list: [...FormData.list, obj] });
+    };
+
+    let handlechange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...FormData, [name]: value });
+    };
+    let handleDelete=(id)=>{
+      console.log(id);
+      let updatedUser = FormData.list.filter((user)=>{
+        return user.id !== id
+      })
+      console.log(updatedUser);
+      setFormData({list:updatedUser})
+      
+      
+    }
+    let handleUpdate=()=>{
+  
+    }
+    return (
+        <div>
+            <form action="" onSubmit={handlesubmit}>
+                <div>
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" id='name' name='name' value={name} onChange={handlechange} />
+                </div>
+                <div>
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" id='email' name='email' value={email} onChange={handlechange} />
+                </div>
+                <button type="submit">Submit</button>
+                <div>Form Details:</div>
+
+            </form>
+            <div>
+                {
+                    list.map((val, i) => {
+                        return (
+                            <div style={{display:'flex', border:'2px solid black',gap:'2px', padding:'2px', margin:'5px'}} >
+                                <div key={i} >
+                                <p>Name: {val.name}</p>
+                                <p>Email: {val.email}</p>
+                                <p>Id: {val.id}</p>
+                                <button onClick={handleUpdate}>Update</button>
+                                <button onClick={()=>handleDelete(val.id)}>Delete</button>
+                                
+                            </div>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+    );
+}
+
+export default CrudEx2;
