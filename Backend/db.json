@@ -1,46 +1,6 @@
 {
   "user": [
     {
-      "id": "1",
-      "name": "akash"
-    },
-    {
-      "id": "9251",
-      "name": "ayush",
-      "email": "AYUSHPANCHAL94@GMAIL.COM",
-      "password": "222222"
-    },
-    {
-      "id": "2aef",
-      "name": "dev",
-      "email": "deva@gmail.com",
-      "password": "222222"
-    },
-    {
-      "id": "cedd",
-      "name": "prem",
-      "email": "prem@gmail.com",
-      "password": "222222"
-    },
-    {
-      "id": "f129",
-      "name": "mckdcmke",
-      "email": "varas@gmail.com",
-      "password": "222222"
-    },
-    {
-      "id": "ce86",
-      "name": "kjkbkjbkj",
-      "email": "AYUSHPANCHAL94@GMAIL.COM",
-      "password": "222222"
-    },
-    {
-      "id": "6765",
-      "name": "mckdcmke",
-      "email": "919873074512",
-      "password": "222222"
-    },
-    {
       "id": "cd00",
       "name": "mckdcmke",
       "email": "AYUSHPANCHAL94@GMAIL.COM",
@@ -48,9 +8,27 @@
     },
     {
       "id": "06bf",
-      "name": "pikachu ",
+      "name": "riachu ",
       "email": "pikachu@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "4137",
+      "name": "dev",
+      "email": "deva@gmail.com",
+      "password": "258520"
+    },
+    {
+      "id": "9d12",
+      "name": "paras",
+      "email": "paras@gmail.com",
+      "password": "123445"
+    },
+    {
+      "id": "5432",
+      "name": "aman",
+      "email": "aman23@gmail.com",
+      "password": "789456"
     }
   ]
 }

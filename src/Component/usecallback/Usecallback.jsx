@@ -1,4 +1,5 @@
-import React, { useMemo, useState } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
+import Child from './Child';
 
 const Usecallback = () => {
     let [count1,setcount1]=useState(0)
@@ -8,12 +9,11 @@ const Usecallback = () => {
         return count1*20;
         
 
-    },[count1])
-    // let display=Usecallback(()=>{
-    //     console.log('i am display function');
-        
+    },[count1]);
 
-    // },[])
+     let display=useCallback(()=>{
+        console.log('i am display function');
+        },[])
 
   return (
     <div>
@@ -25,7 +25,8 @@ const Usecallback = () => {
      <hr /> 
      <h1>Count2:{count2}</h1>
      <button style={{border:'1px solid black'}} onClick={()=>{setcount2(count2+10)}}> increment2</button>
-     {/* <Child display={display}></Child> */}
+     <hr />
+<Child display={display}/>
     </div>
   )
 }

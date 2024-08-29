@@ -31,12 +31,13 @@ import Button from './myContext0/Button';
 // import AxiosIntro from './Component/axios_Api_fetch/AxiosIntro';
 // import { countercontext } from './myContext0/Context';
 // import AppAuthentictionIntro from './Component/AppAuthentication/AppAuthentictionIntro';
-// import CustomHookFetch from './Component/customHook/CustomHookFetch';
-// import Usecallback from './Component/usecallback/Usecallback';
+import CustomHookFetch from './Component/customHook/CustomHookFetch';
+import Usecallback from './Component/usecallback/Usecallback';
 import Hoc from './higherOrderComponent2/Hoc';
 import Card from './higherOrderComponent2/Card';
 import Footer from './higherOrderComponent2/Footer';
 import ReduxApp from './Component/Redux/ReduxApp';
+import LazyloadingApp from './Lazyloading/LazyloadingApp';
 
 
  const App = () => {
@@ -142,10 +143,10 @@ import ReduxApp from './Component/Redux/ReduxApp';
 //<div>
 //  <AxiosIntro/>
 //</div>
-//<div>
-//<Usecallback></Usecallback>
+// {/* <div>
+// <Usecallback></Usecallback>
   
-//</div>
+// </div> */}
 
 
 
@@ -159,15 +160,23 @@ import ReduxApp from './Component/Redux/ReduxApp';
 // <Footer></Footer>
 // </div> 
 
-<div>
-  <ReduxApp/>
-</div>
+//<div>
+ // <ReduxApp/>
+//</div>
 
 
 
 // {/* <div>
 //   <Practice></Practice>
 // </div> */}
+//<div>
+ // <ReduxToDo/>
+
+//</div>
+<div>
+  <LazyloadingApp/>
+  
+</div>
 
 
 

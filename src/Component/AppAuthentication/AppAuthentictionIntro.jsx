@@ -46,14 +46,15 @@ const AppAuthentictionIntro = () => {
                     path:'/profile',
                     element:<Profile/>
                 },
-                {
-                    path:'/update',
-                    element:<Update/>
-                },
+                
                 {
                     path:'/delete',
                     element:<Delete/>
-                }
+                },
+                {
+                    path:'/update/:id',
+                    element:<Update/>
+                },
             ]
         }
         

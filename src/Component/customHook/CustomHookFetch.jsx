@@ -2,22 +2,17 @@ import React from 'react'
 import useFetchData from './useFetchData'
 
 const CustomHookFetch = () => {
-  let data=useFetchData('https://jsonplaceholder.typicode.com/users')
+  let data = useFetchData('https://jsonplaceholder.typicode.com/todos')
   console.log(data);
   
   return (
     <div>
       {
-        data?.map((todo)=>{
+        data?.map((todos)=>{
           return(
-            <div >
-              <h1 key={todo.id}>Name: {todo.name}</h1>
-              
-              <h1 key={todo.id}> Username: {todo.username}</h1>
-             
-              <h1 key={todo.id}> Email: {todo.email}</h1>
-
-
+            <div key={todos.id}>
+              <p>{todos.title}</p>
+              <h1 > Username: {todos.userId}</h1>
             </div>
           )
         })
