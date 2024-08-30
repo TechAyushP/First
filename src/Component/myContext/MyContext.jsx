@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { createElement } from 'react';
 import { createContext } from 'react';
 export let contextVariable= createContext()
 const MyContext = (props) => {
@@ -21,4 +20,3 @@ export default MyContext
   //  <MyContext>
   //   <App />
   //  </MyContext>
-4
