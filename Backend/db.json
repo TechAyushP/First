@@ -3,32 +3,20 @@
     {
       "id": "cd00",
       "name": "mckdcmke",
-      "email": "AYUSHPANCHAL94@GMAIL.COM",
+      "email": "vikasPANCHAL94@GMAIL.COM",
       "password": "123456"
     },
     {
-      "id": "06bf",
-      "name": "riachu ",
-      "email": "pikachu@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "4137",
+      "id": "d229",
       "name": "dev",
-      "email": "deva@gmail.com",
-      "password": "258520"
+      "email": "dev@gmail.com",
+      "password": "123456"
     },
     {
-      "id": "9d12",
-      "name": "paras",
-      "email": "paras@gmail.com",
-      "password": "123445"
-    },
-    {
-      "id": "5432",
-      "name": "aman",
-      "email": "aman23@gmail.com",
-      "password": "789456"
+      "id": "605e",
+      "name": "shashank",
+      "email": "shashank@gmail.com",
+      "password": "2580"
     }
   ]
 }

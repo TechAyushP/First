@@ -102,6 +102,7 @@ const Login = () => {
             return user.email === login.email && user.password === login.password
         })
         if (authorise) {
+            sessionStorage.setItem('token' , authorise.id)
             navigate('/profile')
         } else {
             toast.error('Something went wrong')

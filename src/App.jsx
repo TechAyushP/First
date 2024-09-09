@@ -30,7 +30,7 @@ import Button from './myContext0/Button';
 // import Api from './crud2/ApiFetch/Api';
 // import AxiosIntro from './Component/axios_Api_fetch/AxiosIntro';
 // import { countercontext } from './myContext0/Context';
-// import AppAuthentictionIntro from './Component/AppAuthentication/AppAuthentictionIntro';
+import AppAuthentictionIntro from './Component/AppAuthentication/AppAuthentictionIntro';
 import CustomHookFetch from './Component/customHook/CustomHookFetch';
 import Usecallback from './Component/usecallback/Usecallback';
 import Hoc from './higherOrderComponent2/Hoc';
@@ -38,6 +38,7 @@ import Card from './higherOrderComponent2/Card';
 import Footer from './higherOrderComponent2/Footer';
 import ReduxApp from './Component/Redux/ReduxApp';
 import LazyloadingApp from './Lazyloading/LazyloadingApp';
+import ThunkApiCall from './Component/ThunkRtk/ThunkApiCall';
 
 
  const App = () => {
@@ -173,9 +174,16 @@ import LazyloadingApp from './Lazyloading/LazyloadingApp';
  // <ReduxToDo/>
 
 //</div>
-<div>
-  <LazyloadingApp/>
+//<div>
+ // <LazyloadingApp/>
   
+//</div>
+
+//<div>
+ // <AppAuthentictionIntro/>
+//</div>
+<div>
+  <ThunkApiCall/>
 </div>
 
 

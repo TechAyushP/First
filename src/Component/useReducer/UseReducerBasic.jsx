@@ -25,10 +25,7 @@ const [state,dispatch]=useReducer(reducer,initialstate)
 
   // it is like usestate opposite
   // let [state,setstate]=useState('initial value')
-
-
-
-  return (
+    return (
     <div>
       <div>count:{state}</div>
       <button onClick={()=>{dispatch('increment')}}> Increment</button>

@@ -11,6 +11,7 @@ import Profile from './Profile'
 import AllUsers from './AllUsers.jsx'
 import Update from './Update.jsx'
 import Delete from './Delete.jsx'
+import ProtectedRoutes from './ProtectedRoutes.jsx'
 
 const AppAuthentictionIntro = () => {
     let routs=createBrowserRouter([
@@ -44,7 +45,7 @@ const AppAuthentictionIntro = () => {
                 },
                 {
                     path:'/profile',
-                    element:<Profile/>
+                    element:  <ProtectedRoutes> <Profile/></ProtectedRoutes>
                 },
                 
                 {
@@ -54,6 +55,10 @@ const AppAuthentictionIntro = () => {
                 {
                     path:'/update/:id',
                     element:<Update/>
+                },
+                {
+                    path:'/*',
+                    element:<Loginn/>
                 },
             ]
         }
