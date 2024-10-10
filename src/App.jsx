@@ -38,7 +38,8 @@ import Card from './higherOrderComponent2/Card';
 import Footer from './higherOrderComponent2/Footer';
 import ReduxApp from './Component/Redux/ReduxApp';
 import LazyloadingApp from './Lazyloading/LazyloadingApp';
-import ThunkApiCall from './Component/ThunkRtk/ThunkApiCall';
+import LiftingProps from './Component/LiftingProps/LiftingProps';
+// import ThunkApiCall from './Component/ThunkRtk/ThunkApiCall';
 
 
  const App = () => {
@@ -144,10 +145,10 @@ import ThunkApiCall from './Component/ThunkRtk/ThunkApiCall';
 //<div>
 //  <AxiosIntro/>
 //</div>
-// {/* <div>
-// <Usecallback></Usecallback>
+<div>
+<Usecallback></Usecallback>
   
-// </div> */}
+</div> 
 
 
 
@@ -180,11 +181,17 @@ import ThunkApiCall from './Component/ThunkRtk/ThunkApiCall';
 //</div>
 
 //<div>
- // <AppAuthentictionIntro/>
+//  <AppAuthentictionIntro/>
+// </div>
+
+
+// <div>
+//  <ThunkApiCall/>
+//</div> */
+
+//<div>
+//  <LiftingProps/>
 //</div>
-<div>
-  <ThunkApiCall/>
-</div>
 
 
 

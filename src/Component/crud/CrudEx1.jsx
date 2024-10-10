@@ -11,6 +11,7 @@ const CrudEx1 = () => {
     let handlechange =(e)=>{
       let {name,value}=e.target
       setstate({...state,[name]:value})
+      
 
     }
     let handlesubmit=(e)=>{

@@ -27,7 +27,7 @@ const AxiosEx2Post = () => {
       <button onClick={handlesubmit}>Submit</button>
      </form>
     </div>
-  )
+  ) 
 }
 
 export default AxiosEx2Post
